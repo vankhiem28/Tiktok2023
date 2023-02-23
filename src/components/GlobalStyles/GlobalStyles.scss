@@ -2,6 +2,8 @@
 
 :root {
   --font-family: 'ProximaNova', sans-serif;
+  --black: #000;
+  --text-color: #333;
   --default-layout-header-height: 60px;
   --default-layout-width: 1150px;
 }
@@ -23,6 +25,7 @@ body {
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   overflow-y: overlay;
+  color: var(--text-color);
 }
 
 @font-face {
@@ -44,4 +47,16 @@ body {
   font-family: SofiaPro;
   src: url('/assets/fonts/sofiapro-bold.woff2');
   font-weight: 700;
+}
+
+button,
+input,
+[tabindex] {
+  outline: none;
+  border: none;
+}
+
+a[href] {
+  color: var(--text-color);
+  text-decoration: none;
 }
